@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Results summary component</title>
@@ -12,9 +14,11 @@
   <div class="page-wrapper">
 
     <header class="header">
-      <h1 class="result__p">Your Result</h1>
-      <p class="user-result">76</p>
-      <p class="score-total__p">of 100</p>
+      <h1 class="your-result__h">Your Result</h1>
+      <section class="circle">
+        <p class="user-result">76</p>
+        <p class="score-total__p">of 100</p>
+      </section>
 
       <p class="result__h">Great</p>
       <p class="result__p">You scored higher than 65% of the people who have taken these tests.</p>
@@ -23,44 +27,52 @@
     <main class="main">
       <p class="summary__h">Summary</p>
 
-      <section class="reaction--div">
-        <img src="assets/images/icon-reaction.svg" alt="red lightning bolt" class="reaction__img">
-        <p>Reaction</p>
+      <section class="reaction--div summary--div">
+        <div class="summary__type">
+          <img src="" alt="red lightning bolt" class="icon icon-1">
+          <p class="category category-1"></p>
+        </div>
         <p>
-          <span class="score">80 </span>
+          <span class="score score-1"></span>
           <span class="total"> / 100</span>
         </p>
       </section>
 
-      <section class="memory--div">
-        <img src="assets/images/icon-memory.svg" alt="yellow brain" class="memory__img">
-        <p>Memory</p>
+      <section class="memory--div summary--div">
+        <div class="summary__type">
+          <img src="" alt="yellow brain" class="icon icon-2">
+          <p class="category category-2"></p>
+        </div>
         <p>
-          <span class="score">92 </span>
+          <span class="score score-2"></span>
           <span class="total"> / 100</span>
         </p>
       </section>
 
-      <section class="verbal--div">
-        <img src="assets/images/icon-verbal.svg" alt="green speech bubble" class="verbal__img">
-        <p>Verbal</p>
+      <section class="verbal--div summary--div">
+        <div class="summary__type">
+          <img src="" alt="green speech bubble" class="icon icon-3">
+          <p class="category category-3"></p>
+        </div>
         <p>
-          <span class="score">61 </span>
+          <span class="score score-3"></span>
           <span class="total"> / 100</span>
         </p>
       </section>
 
-      <dev class="visual--div">
-        <img src="assets/images/icon-visual.svg" alt="blue eye" class="visual">
-        <p>Visual</p>
+      <section class="visual--div summary--div">
+        <div class="summary__type">
+          <img src="" alt="blue eye" class="icon icon-4">
+          <p class="category category-4"></p>
+        </div>
         <p>
-          <span class="score">73 </span>
+          <span class="score score-4"></span>
           <span class="total"> / 100</span>
         </p>
-      </dev>
+      </section>
 
       <section class="btn--div">
-        <a class="cotinue--btn" href="#">Continue</a>
+        <a class="continue--btn" href="#">Continue</a>
       </section>
     </main>
   <!-- <div class="attribution">
@@ -68,5 +80,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 </div>
+<script src="app.js"></script>
 </body>
 </html>

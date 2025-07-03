@@ -5,9 +5,218 @@
 }
 
 :root {
-    
+    /* ~~~~~Colors~~~~~ */
+
+    /* Primary */
+
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* ~~Gradients~~ */
+
+    /* background */
+    --light-slate-blue: hsl(252, 100%, 67%); 
+    --light-royal-blue: hsl(241, 81%, 54%);
+
+    /* circle */
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+
+    /* ~~~~~Font Weights~~~~~ */
+    --medium: 500;
+    --bold: 700;
+    --extra-bold: 800;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    color: var(--white);
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+    padding: 1rem 2rem 2rem;
+    /* height: 40%; */
+}
+
+.your-result__h {
+    color: var(--light-lavender);
+    font-size: .9rem;
+    font-weight: var(--medium);
+    margin-bottom: 1rem;
+}
+
+.circle {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-result {
+    font-size: 3rem;
+    font-weight: var(--bold);
+}
+
+.score-total__p {
+    color: var(--light-lavender);
+}
+
+.result__h {
+    margin: 1rem 0 .5rem;
+    font-weight: var(--bold);
+}
+
+.result__p {
+    color: var(--light-lavender);
+    font-size: .9rem;
+    max-width: 15rem;
+}
+
+.main {
+    background-color: var(--white);
+}
+
+.summary__h {
+    color: var(--dark-gray-blue);
+    font-weight: var(--bold);
+    margin: 1rem;
+}
+
+.summary--div {
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin: .8rem 1rem;
+    padding: 0.6rem;
+}
+
+.summary__type {
+    display: flex;
+}
+
+.reaction--div {
+    background-color: hsl(0, 100%, 67%, 0.05);
+    /* opacity: 0.5; */
+    color: var(--light-red);
+}
+
+.memory--div {
+    background-color: hsl(39, 100%, 56%, 0.05);
+    color: var(--orangey-yellow);
+}
+
+.verbal--div {
+    background-color: hsl(166, 100%, 37%, 0.05);
+    color: var(--green-teal);
+}
+
+.visual--div {
+    background-color: hsl(234, 85%, 45%, 0.05);
+    color: var(--cobalt-blue);
+}
+
+.category {
+    font-size: .8rem;
+    margin-left: .5rem;
+}
+
+.score,
+.total {
+    font-size: .8rem;
+    font-weight: var(--bold);
+}
+
+.score {
+    color: var(--dark-gray-blue);
+}
+
+.total {
+    color: #aaa;
+}
+
+.btn--div {
+    background-color: var(--dark-gray-blue);
+    color: var(--pale-blue);
+    text-align: center;
+    border-radius: 40px;
+    margin: 1.25rem 1rem;
+    padding: 0.6rem;
+    cursor: pointer;
+}
+
+.continue--btn {
+    font-size: .8rem;
+    font-weight: var(--bold);
+    color: var(--pale-blue);
+    text-decoration: none;
+    user-select: none;
+}
+
+.btn--div:hover,
+.btn--div:focus {
+    background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    transition: background-image -.3s ease;
+}
+
+/* @media (min-width: 500px) {
+
+    body {
+        background-color: var(--pale-blue);
+    }
+    
+    .page-wrapper {
+        display: flex;
+        flex-direction: row;
+        margin: 8% 0 0 20%;
+        max-width: 600px;
+    }
+    
+    .header {
+        border-radius: 30px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        width: 50%;
+    }
+    
+    .main {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 0 30px 30px 0;
+        width: 55%;
+        margin-left: -1rem;
+        padding-left: 1rem;
+        z-index: -1;
+    }
+
+    .circle {
+        height: 8rem;
+        width: 8rem;
+    }
+
+}; */
 
 /* .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } */
