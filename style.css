@@ -56,6 +56,9 @@ body {
     text-align: center;
     border-radius: 0 0 30px 30px;
     padding: 1rem 2rem 2rem;
+    
+    justify-content: space-between;
+    height: 40vh;
 }
 
 .your-result__h {
@@ -182,7 +185,7 @@ body {
     background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue)) !important;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 500px) {
     
     body {
         background-color: var(--pale-blue);
