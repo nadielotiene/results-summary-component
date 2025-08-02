@@ -1,4 +1,4 @@
-fetch ("/data.json") 
+fetch ("./data.json") 
     .then(res => res.json())
     .then(data => {
         document.querySelector(".icon-1").src = data[0].icon
